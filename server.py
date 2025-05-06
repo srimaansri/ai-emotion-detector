@@ -12,6 +12,9 @@ def emotion_detection_route():
     text_to_analyze = request.form['textToAnalyze']
     result = emotion_detector(text_to_analyze)
 
+    if result['dominant_emotion'] is None:
+        return "Invalid text! Please try again!"
+
     response_text = (
         f"For the given statement, the system response is "
         f"'anger': {result['anger']}, "
@@ -21,6 +24,7 @@ def emotion_detection_route():
         f"'sadness': {result['sadness']}. "
         f"The dominant emotion is {result['dominant_emotion']}."
     )
+
     return response_text
 
 if __name__ == '__main__':
