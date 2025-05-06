@@ -1,10 +1,13 @@
-# Emotion Detection Web App
+# AI Emotion Detector
 
-This application analyzes user input text to detect emotions such as joy, anger, sadness, fear, and disgust using IBM Watson NLP.
+This web application analyzes user input text to detect emotions such as joy, anger, sadness, fear, and disgust using IBM Watson Natural Language Processing (NLP).
 
-It is built using Flask for deployment, includes error handling, unit testing, and has passed static code analysis with a perfect 10/10 PyLint score.
+It is built using Flask for deployment and includes:
+- Robust error handling
+- Automated unit testing
+- Clean code that passes PyLint static analysis with a perfect 10/10 score
 
-To run locally:  
+## To Run Locally:
 ```bash
 python3 server.py
 
