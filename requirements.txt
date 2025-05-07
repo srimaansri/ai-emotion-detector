@@ -1,0 +1,24 @@
+# requirements.txt ─ dependencies for AI Emotion Detector
+# -------------------------------------------------------
+# Web framework
+Flask==3.0.2            # Handles routing and HTML templating
+
+# IBM Watson SDK (includes all NLU calls)
+ibm-watson==8.0.1
+
+# Environment‑variable loader (.env file)
+python-dotenv==1.0.1
+
+# HTTP client (pulled in automatically by ibm‑watson, but pinned here)
+requests==2.32.0
+
+# Development / quality tools
+pytest==8.2.1           # Automated unit tests
+pylint==3.1.0           # Static analysis, target score 10/10
+
+# Optional: production WSGI server (handy for Heroku/Render/etc.)
+gunicorn==21.2.0
+
+# How to install
+# inside your activated virtual environment
+# pip install -r requirements.txt
