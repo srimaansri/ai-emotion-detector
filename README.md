@@ -32,7 +32,7 @@ Everything runs **locally** on your computer—no data is stored.
 ```bash
 # 0) Install Python 3.10+ from python.org
 # 1) Open a terminal (Command Prompt / PowerShell / macOS or Linux Terminal)
-git clone https://github.com/your‑username/emotion‑detector.git
+git clone https://github.com/srimaansri/emotion‑detector.git
 cd emotion‑detector
 
 # 2) Create and activate a virtual environment
